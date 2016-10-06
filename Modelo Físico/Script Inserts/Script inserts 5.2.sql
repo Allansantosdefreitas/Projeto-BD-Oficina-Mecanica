@@ -1,0 +1,385 @@
+/* Script INSERTS -----------------------------------------------------------------------------------------*/
+
+-- ENDEREÇO------
+INSERT INTO endereco (Codigo, LogradouroNome, Numero, Complemento, CEP, Bairro, Cidade, Estado) VALUES 
+	(1,"Avenida Joaquim Ribeiro",740,"CRMF","50980000","Nova Caxangá","Recife","PE"),
+	(2,"Avenida Caxangá",700,"Residencial Jardim Caxangá","50670-000","Caxangá","Recife","PE"),
+	(3,"Avenida Conselheiro Aguiar",181,null,"90590-000","Boa Viagem","Recife","PE"),
+	(4,"Rua Diogo Vasconcelos",1800,"EDF. Jardim Petrópolis","75020-061","Várzea","Recife","PE"),
+	(5,"Avenida Mascarenhas de Morais",2750,null,"56249-000","Impiribeira","Recife","PE"),
+	(6,"Rua Joaquim Tavarços",253,null,"34865-000","Ibura","Recife","PE"),
+	(7,"Rua Emperatriz",3246,null,"69489-000","Boa Vista","Recife","PE"),
+	(8,"Rua da Aurora",425,"Residencial Celso Mirando","50050-000","Boa Vista","Recife","PE"),
+	(9,"Avenida Expedicionário Francisco Vitoriano",2769,null,"50549-000","Várzea","Recife","PE"),
+	(10,"Avenida Tirael",485,null,"92149-000","Boa Viagem","Recife","PE"),
+	(11,"Rua Suitum",8902,null,"52972-000","Aldeia","Recife","PE"),
+	(12,"Avenida One Punch",11111,null,"11111-111","Várzea","Recife","PE"),
+	(13,"Avenida Zero",000,null,"00000-000","Zeronia","Recife","PE"),
+	(14,"Rua Longincuos",9999,"Residencial Campos Ilisius","99999-999","Zeronia","Recife","PE"),
+	(15,"Alameda São Martim",9128,"Residencial Hospedagem dos Mecanics 1","42102-520","São Maritim","Florianópolis","SC"),
+	(16,"Rua Charles Babbage",911,"Residencial Hospedagem dos Mecanics 2","33421-521","São Maritim","Belo Horizonte","MG"),
+	(17,"Av. Gov. Eduardo Campos",1016,"Residencial Hospedagem dos Mecanics 3","87655-811","São Maritim","Rio de Janeiro","RJ"),
+	(18,"Av. Min. Joaquim Barbosa",440,"Residencial Hospedagem dos Mecanics 4","98768-123","São Maritim","Barueri","SP"),
+	(19,"Av. Alan Mathison Turing",2750,"Residencial Hospedagem dos Mecanics 5","40165-007","São Maritim","Belford Roxo","RJ"),
+    (20,"Avenida Eng. Domingos Ferreira",2225,null,"92455-000","Boa Viagem","Recife","PE"),
+	(21,"Rua Quarenta",8902,null,"52972-000","Aldeia","Jaboatão dos Guararapes","PE"),
+	(22,"Avenida Prof. Luís Freire",11111,null,"45431-198","CDU","Recife","PE"),
+	(23,"Estrada dos Remédio",000,null,"45660-059","Afogados","Recife","PE"),
+	(24,"Rua Pediatra Zilda Arns",9999,"Residencial Campos Ilisius","99999-999","Zeronia","Recife","PE"),
+	(25,"Alameda São Martim",9128,"Residencial Boa Vista","42102-520","São Maritim","Florianópolis","SC"),
+	(26,"Rua Cruzeiro do Sul",311,"Efifício Antônio Barroso, apt 45, 5º andar","33421-521","São Maritim","Belo Horizonte","MG"),
+	(27,"Av. Min. Oswaldo Cruz",1016,"Próx. ao Mercadinho Praia de Sol","87655-811","São Maritim","Rio de Janeiro","RJ"),
+	(28,"Av. Min. Joaquim Barbosa",440,"Residencial Hospedagem dos Mecanics 4","98768-123","São Maritim","Barueri","SP"),
+	(29,"Av. Ada Lovelace",2750,"Residencial Barroso & Felix VI","40165-007","São Maritim","Belford Roxo","RJ"),
+    (30,"Av. Alan Dennis Ritchie",2750,"Residencial Camargo & Souza II","40165-007","São Maritim","Belford Roxo","RJ");
+
+-- CLIENTE------
+INSERT INTO cliente (Codigo, Nome, DataNascimento, EnderecoCodigo) VALUES
+	(1,"Deyse Viera",19951011,4),
+	(2,"Luana Rodrigues",19971125,14),
+	(3,"Thayna Almeida",19970412,1),
+	(4,"Rafael Alencar",19950608,2),
+	(5,"Rafael Barbora",19970128,15),
+	(6,"Smith Almeida",19951111,2),
+	(7,"Gabriela Garcia",19960211,3),
+	(8,"Gabriela Mendes",19960517,26),
+	(9,"Jorge Pendragão",19960609,7),
+	(10,"Joaquim Cavalcanti",19970521,8),
+	(11,"Luiz Perrela",19961202,9),
+	(12,"Rick Gustavo",19951017,10),
+	(13,"Stela Melo",19961111,11),
+	(14,"Fabio Junior",19950904,12),
+	(15,"Gustavo Rocha",19940803,13),
+	(16,"Pedro Alcantara",19950524,14),
+	(17,"Eduardo George",19940729,1),
+	(18,"Smith Santino",19970311,13),
+	(19,"Sarah Alberta",19950104,13),
+	(20,"Maria Carla",19920622,21),
+    (21,"Marília Souza Cruz",19820629,29),
+    (22,"Maicon Santos",19810629,20),
+    (23,"John Eurico",19730629,22),
+    (24,"Joana Gabrielly",19600629,26),
+    (25,"Hélio da Silva",19700629,27);
+    
+
+-- MECÂNICO------
+INSERT INTO mecanico (Codigo, Nome, DataNascimento, Especialidade, EnderecoCodigo) VALUES 
+	(1,"Smith Macapera",19901111,"Manutenção",16),
+	(2,"Eduardo Rodrigues",19911211,"Avaliação",16),
+	(3,"George Cardoso",19890930,"Sistema do Motor",16),
+	(4,"John Gueiros",19910529,"Sistema de Refrigeramento",16),
+	(5,"Vinicius Rocher",19910201,"Sistema de Eletrico",17),
+	(6,"Ricardo Borges",19911208,"Avaliação",17),
+	(7,"Rogerio Pacheco",19910415,"Sistema de Freio",17),
+	(8,"Richard Bomfim",19910301,"Sistema de Marchas",17),
+	(9,"Guillerme Henrique",19901021,"Sistema de Suspensão",18),
+	(10,"Bob Bragues",19901203,"Sistema de Direção",18),
+	(11,"Reinado Grabage",19901221,"Manutenção",18),
+	(12,"Brendo Borges",19890725,"Avaliação",18),
+	(13,"Gregorio Bivaques",19901225,"Sistema Hidraulico",19),
+	(14,"Andre Marques",19900827,"Avaliação",19),
+	(15,"Gregorio Bivaques",1990321,"Sistema de Combustão",19),
+	(16,"Mario Badie",19890814,"Sistema de Eletrico",19),
+	(17,"Greg Monteiro",1990321,"Manutenção",15),
+	(18,"Leandro Alves",19890721,"Sistema de Marchas",15),
+	(19,"Mateus Siqueira",19901231,"Sistema de Suspensão",15),
+	(20,"Jorge Michael",19890225,"Avaliação",15);
+
+-- TELEFONE------
+INSERT INTO telefone (Codigo, DDD, Numero) VALUES 
+	(1,"081","93056435"),
+	(2,"081","933445665"),
+	(3,"081","934851236"),
+	(4,"081","935793486"),
+	(5,"081","933445665"),
+	(6,"081","933569849"),
+	(7,"081","936479458"),
+	(8,"081","930547602"),
+	(9,"081","930978720"),
+	(10,"081","938603850"),
+	(11,"081","938947294"),
+	(12,"081","934589323"),
+	(13,"081","939587603"),
+	(14,"081","934628485"),
+	(15,"081","934236542"),
+	(16,"081","932365236"),
+	(17,"081","937988254"),
+	(18,"081","938674957"),
+	(19,"081","937684598"),
+	(20,"081","939375072"),
+	(21,"081","939423456"),
+	(22,"081","932048592"),
+	(23,"081","933243210"),
+	(24,"081","934523671"),
+	(25,"081","931252112"),
+	(26,"081","931251235"),
+	(27,"081","931498756"),
+	(28,"081","931235763"),
+	(29,"081","931234230"),
+	(30,"081","932435671"),
+	(31,"081","933524688"),
+	(32,"081","934612384"),
+	(33,"081","931234214"),
+	(34,"081","935698853"),
+	(35,"081","931536879"),
+	(36,"081","930895845"),
+	(37,"081","936853685"),
+	(38,"081","936543314"),
+	(39,"081","936780956"),
+	(40,"081","937805319");
+
+-- CLIENTE_HAS_TELEFONE------
+INSERT INTO cliente_has_telefone(Codigo, ClienteCodigo, TelefoneCodigo) VALUES 
+	(1,5,2),
+	(7,2,1),
+	(3,3,3),
+	(4,4,4),
+	(5,1,5),
+	(6,6,6),
+	(2,15,7),
+	(8,15,10),
+	(9,9,9),
+	(10,17,8),
+	(11,11,11),
+	(12,20,12),
+	(13,13,13),
+	(14,8,14),
+	(15,7,15),
+	(16,16,16),
+	(17,10,17),
+	(18,18,18),
+	(19,19,19),
+	(20,12,20);
+
+-- MECANICO_HAS_TELEFONE------
+INSERT INTO mecanico_has_telefone (Codigo, TelefoneCodigo, MecanicoCodigo) VALUES 
+	(1,21,1),
+	(2,22,2),
+	(3,23,3),
+	(4,24,4),
+	(5,25,5),
+	(6,26,6),
+	(7,27,7),
+	(8,28,8),
+	(9,29,9),
+	(10,30,10),
+	(11,31,11),
+	(12,32,12),
+	(13,33,13),
+	(14,34,14),
+	(15,35,15),
+	(16,36,16),
+	(17,37,17),
+	(18,38,18),
+	(19,39,19),
+	(20,40,20);
+
+-- EQUIPE------
+INSERT INTO equipe (Codigo, Nome) VALUES
+	
+    (1,"Team One"),
+	(2,"Team Two"),
+	(3,"Team Three"),
+	(4,"Team Four"),
+	(5,"Team Five"),
+	(6,"EquipeAlfa"),
+	(7,"Equipe Beta"),
+	(8,"Equipe Gama"),
+	(9,"Equipe Delta"),
+	(10,"Equipe Sênior"),
+	(11,"Equipe Júnior"),
+	(12,"Especialistas"),
+    (13,"Veteranos"),
+    (14,"Novatos"),
+    (15,"Equipe Pró-Fast");
+    
+    
+INSERT INTO Mecanico_has_equipe (Codigo, MecanicoCodigo, EquipeCodigo) VALUES
+	(1,1,12),
+    (2,2,9),
+    (3,5,7),
+    (4,8,12),
+    (5,3,7),
+    (6,9,11),
+    (7,11,9),
+    (8,11,1),
+    (9,12,1),
+    (10,4,3),
+    (11,7,9),
+    (12,6,5),
+    (13,5,4);
+    
+    
+    
+
+
+
+-- ORDEM DE SERVIÇO------ 
+INSERT INTO OrdemDeServico(Codigo, Valor, DataEmissao, DataConclusao, ClienteCodigo, EquipeCodigo) VALUES
+
+	(1, 79.99, '2015-08-09', '2015-08-10', 1, 2),
+	(2, 119.99, '2015-08-03', '2015-08-30', 4, 12),
+	(3, 169.98, '2014-10-05', '2014-10-11', 3, 10),
+	(4, 109.99, '2013-10-12', '2013-10-12', 7, 1),
+	(5, 150.00, '2014-08-03', '2014-08-03', 8, 3),
+	(6, 300.00, '2013-07-17', '2013-07-17', 12, 4),
+	(7, 99.00, '2012-05-21', '2012-05-30', 20, 6),
+	(8, 70.00, '2012-09-22', '2012-10-01', 19, 7),
+	(9, 40.00, '2015-08-20', '2015-08-21', 15, 7),
+	(10, 30.00, '2015-11-27', '2015-11-28', 17, 8),
+	(11, 90.00, '2014-11-24', '2014-11-25', 14, 10),
+	(12, 80.00, '2014-12-16', '2014-12-16', 5, 8),
+	(13, 1097.50, '2014-07-13', '2014-07-13', 9, 3),
+	(14, 100.69, '2014-05-18', '2014-05-18', 17, 4),
+	(15, 300.69, '2013-02-16', '2013-02-16', 18, 7),
+	(16, 855.00, '2013-01-07', '2013-01-10', 16, 9),
+	(17, 109.97, '2013-01-05', '2013-01-08', 13, 12),
+	(18, 2349.65, '2013-03-08', '2013-04-08', 12, 4),
+	(19, 234.99, '2015-08-25', '2015-08-28', 12, 6),
+	(20, 5445.99, '2015-01-12', '2015-01-17', 11, 5),
+    (21, 1099.70, '2013-01-05', '2013-01-08', 13, 5),
+	(22, 99.99, '2013-03-08', '2013-04-08', 12, 3),
+	(23, 100.00, '2015-08-25', '2015-08-28', 20, 1),
+	(24, 55.99, '2015-01-12', '2014-01-07', 11, 8),
+    (25, 500.00, '2015-08-25', '2015-09-12', 11, 15),
+	(26, 500.00, '2015-08-25', '2015-02-28', 20, 15);
+
+
+-- SERVIÇOS------
+INSERT INTO servicos (Codigo, Valor, Descricao) VALUES 
+	(1,79.99,"Checagem"),
+	(2,119.99,"Manutenção"),
+	(3,69.99,"Troca de Peça"),
+	(4,49.99,"Calibragem"),
+	(5,150.00,"Troca de Oléo"),
+	(6,300.00,"Revisão"),
+	(7,99.00,"Higienização de Ar-Condicionado"),
+	(8,70.00,"Troca de Filtro de Óleo"),
+	(9,40.00,"Alinhamento"),
+	(10,30.00,"Balanceamento"),
+	(11,90.00,"Cambagem"),
+	(12,80.00,"Escapamento");
+
+-- OrdemDeServiço_has_Serviços------ 
+INSERT INTO OrdemDeServico_has_servicos (Codigo, OrdemDeServicoCodigo, ServicosCodigo) VALUES
+	(1,1,1),
+    (2,2,2),
+    (3,3,3),
+    (4,4,4),
+    (5,5,5),
+    (6,6,6),
+    (7,7,7),
+    (8,8,8),
+    (9,9,9),
+    (10,10,10),
+    (11,11,11),
+    (12,12,12),
+    -- Começam as trocas de peças------
+    (13,13,3),
+    (14,14,3),
+    (15,15,3),
+    (16,16,3),
+    (17,17,3),
+    (18,18,3),
+    (19,19,3),
+    (20,20,3);
+
+
+
+-- FABRICANTE ----------- 
+INSERT INTO Fabricante (Codigo, Nome) VALUES 
+	(1,'Volkswagen'),
+	(2,'Hyundai'),
+	(3,'Renault'),
+	(4,'Ford'),
+	(5,'Kia'),
+	(6,'Peugeot'),
+	(7,'Toyota'),
+	(8,'Chevrolet'),
+	(9,'Fiat'),
+	(10,'Honda'),
+	(11,'Bosch'),
+	(12,'Duroline '),
+	(13,'Engrecon '),
+	(14,'Esperança'),
+	(15,'Case'),
+	(16,'Ecoparts'),
+	(17,'Max Gear'),
+	(18,'Continental'),
+	(19,'MAHLE'),
+	(20,'Mecano'),
+	(21,'Freios Farj'),
+	(22,'Niken'),
+	(23,'Grammer'),
+	(24,'Seeber Fastplas'),
+	(25,'Tecnoplast'),
+	(26,'DTS'),
+	(27,'Airtech Airspring'),
+	(28,'Pradolux'),
+	(29,'Prevent Group'),
+	(30,'Usiparts');
+
+-- PEÇAS---------
+INSERT INTO pecas (Codigo, Descricao, Valor, Lote, DataVencimento, FabricanteCodigo) VALUES
+	(1,'Bateria',99.99,5448-7,20170620,15),
+	(2,'Pneu',99.50,8290-3,20160610,15),
+	(3,'Parafuso',100.99,4420-1,20180210,27),
+	(4,'Janela',300.99,5049-3,20160820,29),
+	(5,'Retrovisor',855.99,5420-1,20190214,23),
+	(6,'Embreagem',109.9,5230-5,20160310,23),
+	(7,'Calota',99.99,7820-1,20160610,18),
+	(8,'Freio',99.79,5341-4,20170610,15),
+	(9,'Caixa de marcha',55.99,5592-1,20160328,18),
+	(10,'Buzina',39.89,8920-5,20160507,19),
+	(11,'Bomba de nitro',97.29,4820-1,20160410,28),
+	(12,'Suspensão',999.99,2320-7,20190610,23),
+	(13,'Carburador',550.99,1620-9,20480610,26),
+	(14,'Escape',39.99,5140-1,20160622,26),
+	(15,'Parabrisas',1789.99,5780-3,20180406,17),
+	(16,'Farol',920.99,5550-7,20180711,17),
+	(17,'Palhetas',109.99,8220-3,20160816,19),
+	(18,'Freio',48.99,5320-1,20200423,25),
+	(19,'Raio',99.98,5040-1,20160616,24),
+	(20,'Capô',1008.99,2020-1,20180410,24);
+
+-- OrdemDeServiço_has_Peças------ 
+
+INSERT INTO OrdemDeServico_has_pecas (Codigo, OrdemDeServicoCodigo, PecasCodigo) VALUES
+	(1,3,1),
+    (2,13,2),
+    (3,14,3),
+    (4,15,4),
+    (5,16,5),
+    (6,17,6),
+    (7,18,7),
+    (8,19,8),
+    (9,20,9),
+    (10,20,9),
+    (11,2,8),
+	(12,2,2);	
+
+-- VEÍCULO------ 
+INSERT INTO Veiculo(Codigo, Placa, Modelo, AnoFabricacao, ClienteCodigo, FabricanteCodigo) VALUES
+    (1, 'PSH3066', 'Pálio', '2015', 1, 9),
+	(2, 'ABX8598', 'i30', '2012', 2, 2),	
+	(3, 'BZX8505', 'HB20', '2015', 3, 2),
+	(4, 'AGD4567', 'Corolla', '2014', 4, 7),
+	(5, 'AGD4567', 'Civic', '2011', 5, 10),
+	(6, 'KJK5214', 'City', '2012', 6, 10),
+	(7, 'BJD0632', '308', '2010', 7, 6),
+	(8, 'DGA4504', '307', '2013', 8, 6),
+	(9, 'RBA2582', 'Soul', '2013', 9, 5),
+	(10, 'LKA4268', 'Siena', '2014', 10, 9),
+	(11, 'BXA8520', 'Spin', '2015', 11, 8),
+	(12, 'TRA8560', 'Focus', '2015', 12, 4),
+	(13, 'LPO8952', 'Logan', '2013', 13, 3),
+	(14, 'TFF4522', 'Voyage', '2014', 14, 1),
+	(15, 'ADG5822', 'Fox', '2012', 15, 1),
+	(16, 'QGA4532', 'CrossFox', '2014', 16, 1),
+	(17, 'MLO2197', 'Uno', '2013', 17, 9),
+	(18, 'NBV6502', 'Etios', '2013', 18, 7),
+	(19, 'HGT7895', 'Ka', '2013', 19, 4),
+	(20, 'PHG8470', 'Veloster', '2015', 20, 2),
+    (21, 'ATG8270', 'Tiguan', '2015', 2, 1);
+
+-- FIM
